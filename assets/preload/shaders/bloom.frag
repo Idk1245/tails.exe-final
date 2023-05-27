@@ -1,4 +1,4 @@
-#pragma version 100
+#pragma header
 
 const float amount = 2.0;
 
