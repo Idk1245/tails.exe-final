@@ -109,6 +109,10 @@ class TailsState extends MusicBeatState
 
         FlxTween.tween(title, {y: title.y - 40}, 3, {type: FlxTweenType.PINGPONG, ease: FlxEase.sineInOut});
 
+		#if android
+                addVirtualPad(NONE, A);
+                #end
+			
 		super.create();
 
 	}
