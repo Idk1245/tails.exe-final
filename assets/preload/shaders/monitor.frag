@@ -2,7 +2,7 @@
 
 float zoom = 1.1;
 void main()
-{
+{ // acho que não tem nada errado aqui 
     vec2 uv = openfl_TextureCoordv;
     uv = (uv-.5)*2.;
     uv *= zoom;
