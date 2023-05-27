@@ -304,7 +304,9 @@ class CreditsState extends MusicBeatState
 		add(yummy);
 		
 		changeSelection();
-		
+		#if android
+                addVirtualPad(UP_DOWN, B);
+                #end
 		super.create();
 	}
 
