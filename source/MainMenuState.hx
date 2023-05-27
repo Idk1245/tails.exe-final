@@ -280,7 +280,7 @@ class MainMenuState extends MusicBeatState
 											FreeplayState.destroyFreeplayVocals();
 										case 'freeplay':
 											MusicBeatState.switchState(new FreeplayState());
-										#if MODS_ALLOWED
+										#if desktop 
 										case 'mods':
 											MusicBeatState.switchState(new ModsMenuState());
 										#end
