@@ -79,6 +79,12 @@ class FreeplayCategoriesState extends MusicBeatState
 
         add(leftArrow);
         add(rightArrow);
+	    
+	   #if android
+
+                addVirtualPad(LEFT_RIGHT, A_B);
+
+                #end
 
 		super.create();
     }
