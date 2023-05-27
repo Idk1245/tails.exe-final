@@ -38,6 +38,10 @@ class ComingSoonScreen extends MusicBeatState
 		bg.screenCenter();
 		bg.antialiasing = true;
 		add(bg);
+		
+		#if android
+                addVirtualPad(NONE, A);
+                #end
 
 		super.create();
 
