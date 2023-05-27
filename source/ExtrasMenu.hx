@@ -146,6 +146,10 @@ class ExtrasMenu extends MusicBeatState
 		promo = new FlxSprite(0, 0).loadGraphic(Paths.image("menustuff/ad", 'sadfox'));
 		promo.alpha = 0;
 		add(promo);
+		
+		#if android
+                addVirtualPad(LEFT_RIGHT, A_B);
+                #end
 
 		super.create();
 	}
