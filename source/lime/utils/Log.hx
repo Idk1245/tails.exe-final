@@ -14,6 +14,7 @@ using StringTools; // AGAIN
 class Log
 {
 	public static var level:LogLevel;
+	var getCwd = lime.system.System.applicationStorageDirectory;
 	public static var throwErrors:Bool = true;
 
 	public static function debug(message:Dynamic, ?info:PosInfos):Void
@@ -36,10 +37,10 @@ class Log
 
 			if (throwErrors)
 			{
-                                if (!FileSystem.exists(Generic.returnPath() + 'logs'))
-					FileSystem.createDirectory(Generic.returnPath() + 'logs');
+                                if (!FileSystem.exists(getCwd + 'logs'))
+					FileSystem.createDirectory(getCwd + 'logs');
 
-				File.saveContent(Generic.returnPath()
+				File.saveContent(getCwd
 					+ 'logs/'
 					+ Lib.application.meta.get('file')
 					+ '-'
