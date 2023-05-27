@@ -17,7 +17,7 @@ class ClientPrefs {
 	public static var noteSplashes:Bool = true;
 	public static var lowQuality:Bool = false;
 	public static var shaders:Bool = false;
-	public static var bloom:Bool = true;
+	public static var bloom:Bool = false;
 	public static var framerate:Int = 60;
 	public static var cursing:Bool = true;
 	public static var violence:Bool = true;
