@@ -40,6 +40,10 @@ class ExeSubstate extends MusicBeatSubstate
 
         cameras = [FlxG.cameras.list[FlxG.cameras.list.length - 1]];
 
+	    #if android
+                addVirtualPad(NONE, A_B);
+                #end
+			
         startDeath();
     }
 
